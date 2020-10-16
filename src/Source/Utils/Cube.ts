@@ -7,8 +7,8 @@ export default class Cube {
 	colorBuffer;
 	gl
 	constructor(								//声明绘制用物体对象所属类
-		gl,						 					//GL上下文
-		programIn	//着色器程序id
+		gl:WebGL2RenderingContext,						 					//GL上下文
+		programIn:WebGLProgram	//着色器程序id
 	) {
 		var UNIT_SIZE = 0.3;
 		this.vertexData = [
