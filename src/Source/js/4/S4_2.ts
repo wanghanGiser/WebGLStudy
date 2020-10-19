@@ -1,6 +1,6 @@
 import MatrixState from '../../Utils/MatrixState.js'
 import { loadShaderSerial } from '../../Utils/GLUtil.js'
-import SixPointedStar from '../../Utils/SixPointedStar.js'
+import SixPointedStar from '../../Graphics/SixPointedStar.js'
 window.onload = start;
 
 let vtrtex =

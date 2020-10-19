@@ -1,4 +1,4 @@
-import Cube from '../../Utils/Cube.js';
+import Cube from '../../Graphics/Cube.js';
 import MatrixState from '../../Utils/MatrixState.js'
 import { loadShaderSerial } from '../../Utils/GLUtil.js'
 

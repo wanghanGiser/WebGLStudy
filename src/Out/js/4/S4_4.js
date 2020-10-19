@@ -1,4 +1,4 @@
-import Cube from '../../Utils/Cube.js';
+import Cube from '../../Graphics/Cube.js';
 import MatrixState from '../../Utils/MatrixState.js';
 import { loadShaderSerial } from '../../Utils/GLUtil.js';
 var vertex = "#version 300 es\nuniform mat4 uMVPMatrix; //\u603B\u53D8\u6362\u77E9\u9635\nlayout (location = 0) in vec3 aPosition;  //\u9876\u70B9\u4F4D\u7F6E\nlayout (location = 1) in vec4 aColor;    //\u9876\u70B9\u989C\u8272\nout  vec4 vColor;  //\u7528\u4E8E\u4F20\u9012\u7ED9\u7247\u5143\u7740\u8272\u5668\u7684\u53D8\u91CF\n\nvoid main()\n{\n   gl_Position = uMVPMatrix * vec4(aPosition,1); //\u6839\u636E\u603B\u53D8\u6362\u77E9\u9635\u8BA1\u7B97\u6B64\u6B21\u7ED8\u5236\u6B64\u9876\u70B9\u4F4D\u7F6E\n   vColor = aColor;//\u5C06\u63A5\u6536\u7684\u989C\u8272\u4F20\u9012\u7ED9\u7247\u5143\u7740\u8272\u5668\n}";

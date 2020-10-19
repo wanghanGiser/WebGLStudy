@@ -1,4 +1,4 @@
-import MatrixState from "./MatrixState"
+import MatrixState from "../Utils/MatrixState"
 
 
 export default class PointOrLines {

@@ -1,7 +1,7 @@
 
 import MatrixState from '../../Utils/MatrixState.js'
 import { loadShaderSerial } from '../../Utils/GLUtil.js'
-import PointOrLines from '../../Utils/PointOrLine.js';
+import PointOrLines from '../../Graphics/PointOrLine.js';
 
 const vshader = `#version 300 es
 uniform mat4 uMVPMatrix; //总变换矩阵
