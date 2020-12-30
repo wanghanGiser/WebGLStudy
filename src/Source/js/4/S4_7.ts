@@ -79,11 +79,11 @@ function start() {
   shaderProgArray[0] = loadShaderSerial(gl, vshader, fshader);
   if (shaderProgArray[0]) {
     ooTri = new Belt(gl, shaderProgArray[0])
-    ooTriC = new Circle(gl, shaderProgArray[0])
+    ooTriC = new Circle(gl, shaderProgArray[0],6)
   } else {
     setTimeout(() => {
       ooTri = new Belt(gl, shaderProgArray[0]);
-      ooTriC = new Circle(gl, shaderProgArray[0])
+      ooTriC = new Circle(gl, shaderProgArray[0],6)
     }, 300)
   }
   drawFrame();
