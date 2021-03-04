@@ -65,6 +65,6 @@ export default class Ball {
     var muRHandle = this.gl.getUniformLocation(this.program, "uR");
     this.gl.uniform1f(muRHandle, this.BallR);
 
-    this.gl.drawArrays(this.gl.TRIANGLES, 0, this.vcount);
+    this.gl.drawArrays(this.gl.LINE_LOOP, 0, this.vcount);
   }
 }

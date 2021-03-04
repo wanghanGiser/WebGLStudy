@@ -48,7 +48,7 @@ var Ball = /** @class */ (function () {
         this.gl.vertexAttribPointer(this.gl.getAttribLocation(this.program, "aPosition"), 3, this.gl.FLOAT, false, 0, 0);
         var muRHandle = this.gl.getUniformLocation(this.program, "uR");
         this.gl.uniform1f(muRHandle, this.BallR);
-        this.gl.drawArrays(this.gl.TRIANGLES, 0, this.vcount);
+        this.gl.drawArrays(this.gl.LINE_LOOP, 0, this.vcount);
     };
     return Ball;
 }());
